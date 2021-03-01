@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: linear-gradient(-35deg, #0B54FE, #C020D0);
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+/* Loading */
+.loading {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading p {
+    display: none;
+    color: #fff;
+
+    padding: 8px;
+}
+
+/* Register */
+.register, .login {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register {
+    display: none;
+    width: auto;
+    height: auto;
+
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.register form {
+    margin: 30px;
+}
+
+.register h1 {
+    text-align: center;
+    margin-bottom: 20px;
+
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Input fields */
+.register input {
+    outline: none;
+    display: block;
+
+    color: #fff;
+
+    margin: 8px auto;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0B54FE;
+
+    padding: 8px;
+    width: 280px;
+
+    transition: .4s;
+}
+
+.register input::placeholder {
+    color: #fff;
+}
+
+.register input:focus {
+    border-bottom: 1px solid rgba(255, 0, 0, .6);
+}
+
+/* Buttons  */
+.register button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    
+    width: 100px;
+    padding: 7px;
+    background:rgba(0, 0, 0, .6);
+
+    margin-top: 10px;
+
+    border: none;
+    color: #fff;
+
+    transition: .4s;
+}
+
+.register button.next-form {
+    float: right;
+}
+
+.register button:hover {
+    background-color: #0B54FE;
+    width: 120px;
+}
+
+.register button.next-form:hover {
+    background-color: #C020D0;
+}
+
+/* Icons */
+.register i, .login i {
+    cursor: pointer;
+
+    font-size: 2.5rem;
+    margin: 50px 15px 20px;
+
+    transition: .4s;
+}
+
+.register i:nth-child(1), .login i:nth-child(1) {
+    color: #C020D0;
+}
+
+.register i:nth-child(1):hover, .login i:nth-child(1):hover {
+    transform: scale(1.2);
+}
+
+.register i:nth-child(2), .login i:nth-child(2) {
+    color: #111;
+}
+
+.register i:nth-child(2):hover, .login i:nth-child(2):hover {
+    transform: scale(1.2);
+}
+
+.register i:nth-child(3), .login i:nth-child(3) {
+    color: #7289da;
+}
+
+.register i:nth-child(3):hover, .login i:nth-child(3):hover {
+    transform: scale(1.2);
+}
+
+/* Login */
+.login {
+    display: none;
+    width: auto;
+    height: auto;
+
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.login form {
+    margin: 30px;
+}
+
+.login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Input fields */
+.login input {
+    outline: none;
+    display: block;
+
+    color: #fff;
+
+    margin: 8px auto;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0B54FE;
+
+    padding: 8px;
+    width: 280px;
+
+    transition: .4s;
+}
+
+.login input::placeholder {
+    color: #fff;
+}
+
+.login input:focus {
+    border-bottom: 1px solid rgba(255, 0, 0, .6);
+}
+
+/* Buttons  */
+.login button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    
+    width: 100px;
+    padding: 7px;
+    background:rgba(0, 0, 0, .6);
+
+    margin-top: 10px;
+
+    border: none;
+    color: #fff;
+
+    transition: .4s;
+}
+
+.login button.next-form {
+    float: right;
+}
+
+.login button:hover {
+    background-color: #0B54FE;
+    width: 120px;
+}
+
+.login button.next-form:hover {
+    background-color: #C020D0;
+}
+
+/* Icons */
+.login i, .login i {
+    cursor: pointer;
+
+    font-size: 2.5rem;
+    margin: 50px 15px 20px;
+
+    transition: .4s;
+}
+
+.login i:nth-child(1), .login i:nth-child(1) {
+    color: #C020D0;
+}
+
+.login i:nth-child(1):hover, .login i:nth-child(1):hover {
+    transform: scale(1.2);
+}
+
+.login i:nth-child(2), .login i:nth-child(2) {
+    color: #111;
+}
+
+.login i:nth-child(2):hover, .login i:nth-child(2):hover {
+    transform: scale(1.2);
+}
+
+.login i:nth-child(3), .login i:nth-child(3) {
+    color: #7289da;
+}
+
+.login i:nth-child(3):hover, .login i:nth-child(3):hover {
+    transform: scale(1.2);
+}

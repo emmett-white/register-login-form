@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sign Up | Sign In</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="./app.js" async defer></script>
+
+    <header></header>
+    <div class="loading">
+        <p id="loading-text"></p>
+    </div>
+
+    <div id="register" class="register">
+        <form action="#">
+            <h1>Register</h1>
+
+            <input type="text" placeholder="Username">
+            <input type="gmail" placeholder="example@gmail.com">
+            <input type="password" placeholder="Password">
+            
+            <button>Submit</button>
+            <button class="next-form" onclick="changeForm('login'); loadingScreen('login');">Sign In</button>
+
+            <center>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-discord"></i>
+            </center>
+        </form>
+    </div>
+
+    <div id="login" class="login">
+        <form>
+            <h1>Login</h1>
+
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            
+            <button>Submit</button>
+            <button class="next-form" onclick="changeForm('register'); loadingScreen('register');">Sign Up</button>
+
+            <center>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-discord"></i>
+            </center>
+        </form>
+    </div>
+</body>
+</html>
